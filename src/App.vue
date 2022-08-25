@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <p>this shows a working vue 3 composable that accomplishes same functionality as the smart widgets vue 2 reward mixin</p>
+  <p>resizing the screen will trigger breakpoint size rerendering</p>
+  <p>refreshing the page will give a random size attr to an image</p>
+  <RewardCard />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RewardCard from './components/RewardCard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+   RewardCard
+  },
+  setup() {
+
+    return {
+
+    }
   }
 }
 </script>
